@@ -8,7 +8,7 @@ const CustomLink = ({children, to, ...props}: LinkProps) => {
 	let match = useMatch({path: resolved.pathname, end: true});
 
 	return (
-		<div style={{padding: "10px", backgroundColor: match ? "white" : "#202124"}}>
+		<div style={{padding: "10px", backgroundColor: match ? "white" : "#303134" /*#202124*/, borderRadius: '20px 20px 0 0'}}>
 			<NavLink
 				style={{
 					color: match ? "red" : 'var(--color-txt-body)',
