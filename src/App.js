@@ -4,6 +4,8 @@ import Body from "./components/Body/Body";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import {BrowserRouter} from "react-router-dom";
+import {Provider} from "react-redux";
+import store from "./Redux/redux-store";
 
 const App = ()=> {
 	return (
@@ -30,7 +32,9 @@ const App = ()=> {
 
 const AppContainer = () => {
 	return <BrowserRouter>
-		<App/>
+		<Provider store={store}>
+			<App/>
+		</Provider>
 	</BrowserRouter>
 }
 export default AppContainer;

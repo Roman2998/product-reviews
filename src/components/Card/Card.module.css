@@ -1,16 +1,16 @@
 .mainDiv {
     display: flex;
     justify-content: center;
-    flex: 1 1 27vh;
+    flex: 1;
     margin: 0.5vh;
+    flex-direction: column;
 }
 .buttonDiv {
     border-radius: 4px;
     box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.15), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     overflow: hidden;
-    max-width: 400px;
-    /*margin: 15px;*/
-}
+    min-width: 250px;
+    }
 
 .button {
     background-color: transparent;
