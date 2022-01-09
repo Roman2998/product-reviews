@@ -12,9 +12,8 @@ const Card = ({review}) => {
 						     src={review.img}/>
 						<div className={classes.cardContent}>
 							<div className={classes.cardTitle}>
-								{review.preTitle}
+								{review.title}
 							</div>
-							<div>{review.preText}</div>
 						</div>
 					</button>
 				</div>

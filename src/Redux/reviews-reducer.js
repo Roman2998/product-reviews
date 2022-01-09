@@ -5,7 +5,8 @@ const SET_REVIEWS = 'SET_REVIEWS';
 const SET_CARD_INFO = 'SET_CARD_INFO';
 
 const initialState = {
-	reviews: []
+	reviews: [],
+	cardInfo:{}
 }
 
 const reviewsReducer = (state = initialState, action) => {
@@ -13,31 +14,30 @@ const reviewsReducer = (state = initialState, action) => {
 		case SET_REVIEWS:
 			return {
 				...state,
-				reviews: action.reviews
+				reviews: action.payload
 			}
 			//
 		case SET_CARD_INFO:
 			return {
 				...state,
-				cardInfo: action.cardInfo
+				cardInfo: action.payload
 			}
 		default:
 			return state;
 	}
 }
 
-export const setReviews = (reviews) => ({type: SET_REVIEWS, reviews})
+export const setReviews = (reviews) => ({type: SET_REVIEWS, payload: reviews})
 //
-export const setCardInfo = (cardInfo) => ({type: SET_CARD_INFO, cardInfo})
+export const setCardInfo = (cardInfo) => ({type: SET_CARD_INFO, payload: cardInfo})
 
-export const requestReviews = () => (dispatch) => {
+export const requestReviews = () => async (dispatch) => {
 	const response = reviewsAPI.getReviews();
 	dispatch(setReviews(response));
 }
-
 //
-export const getCardInfo = (cardId) => (dispatch) => {
-	const response = reviewsAPI.getInfo(cardId);
+export const getCardInfo = (cardId) => async (dispatch) => {
+	const response = reviewsAPI.getByFindReview(cardId);
 	dispatch(setCardInfo(response));
 }
 

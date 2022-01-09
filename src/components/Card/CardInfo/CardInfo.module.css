@@ -1,0 +1,29 @@
+.content {
+    padding: 16px;
+}
+.titleImg img{
+    border-radius: 10px;
+    max-height: 500px;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.reviewImg{
+    text-align: center;
+}
+.reviewImg img{
+    max-height: 275px;
+    max-width: 100%;
+}
+.title{
+    font-size: 1.5rem;
+    line-height: 1.334;
+    margin-bottom: 0.35em;
+}
+
+.text {
+    line-height: 1.6;
+    letter-spacing: 0.01071em;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: justify;
+}
