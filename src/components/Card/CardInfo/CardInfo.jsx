@@ -12,14 +12,24 @@ const CardInfo = ({cardInfo}) => {
 			</div>
 			<div className={classes.text}>
 				{
+					// eslint-disable-next-line array-callback-return
 					cardInfo[0] && Object.keys(cardInfo[0].text).map(key => {
-						if (cardInfo[0].text[key].title) {
+						if (cardInfo[0].text[key]) {
 							return (
 								<div key={key}>
 									<h3> {cardInfo[0].text[key].title}</h3>
+									{cardInfo[0].text[key].img &&
 									<div className={classes.reviewImg}>
-										<img src={cardInfo[0].text[key].img} alt={cardInfo[0].text[key].title}/>
+										<img src={cardInfo[0].text[key].img}
+										     alt={cardInfo[0].text[key].title || cardInfo[0].title}/>
 									</div>
+									}
+									{cardInfo[0].text[key].linkToBuy &&
+									<div className={classes.button}>
+										<a href={cardInfo[0].text[key].linkToBuy} target={"_blank"}
+										   rel={"noreferrer"}>Buy from Amazon</a>
+									</div>
+									}
 									<p>{cardInfo[0].text[key].text}</p>
 								</div>
 							)

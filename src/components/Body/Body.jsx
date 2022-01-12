@@ -1,21 +1,23 @@
 import React from 'react';
 import {Navigate, Route, Routes} from "react-router-dom";
-import Popular from "../contentComponents/Popular/Popular";
+import {PopularContainer} from "../contentComponents/Popular/PopularContainer";
 import Deals from "../contentComponents/Deals/Deals";
-import Gaming from "../contentComponents/Gaming/Gaming";
+import {GamingContainer} from "../contentComponents/Gaming/GamingContainer";
 import Entertainment from "../contentComponents/Entertainment/Entertainment";
-import ReviewsContainer from "../contentComponents/Reviews/ReviewsContainer";
+import {ReviewsContainer} from "../contentComponents/Reviews/ReviewsContainer";
 import {CardInfoContainer} from "../Card/CardInfo/CardInfoContainer";
+import {useSelector} from "react-redux";
 
 const Body = () => {
+	const currentPage = useSelector(state => state.reviewsPage.currentPage)
 	return <Routes>
-		<Route path={`/`} exact element={<Navigate to={"/popular"}/>}/>
-		<Route path={`/popular`} element={<Popular/>}/>
-		<Route path={`/reviews`} element={<ReviewsContainer/>}/>
-		<Route path={`/gaming`} element={<Gaming/>}/>
-		<Route path={`/entertainment`} element={<Entertainment/>}/>
-		<Route path={`/deals`} element={<Deals/>}/>
-		<Route path={`/reviews-info/:id`} element={<CardInfoContainer/>}/>
+		<Route path={`/`} element={<Navigate to={"/popular"}/>}/>
+		<Route path={`/popular/*`} element={<PopularContainer/>}/>
+		<Route path={`/reviews/*`} element={<ReviewsContainer/>}/>
+		<Route path={`/gaming/*`} element={<GamingContainer/>}/>
+		<Route path={`/entertainment/*`} element={<Entertainment/>}/>
+		<Route path={`/deals/*`} element={<Deals/>}/>
+		<Route path={`/${currentPage}/:id`} element={<CardInfoContainer/>}/>
 	</Routes>
 }
 

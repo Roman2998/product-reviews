@@ -1,17 +1,31 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {getCardInfo} from "../../../Redux/reviews-reducer";
+import {getCardInfo, getCardInfoGaming, getCardInfoPopular} from "../../../Redux/reviews-reducer";
 import CardInfo from "./CardInfo";
 import {useParams} from "react-router-dom";
+import {PAGES} from "../../../constants";
 
 export const CardInfoContainer = () => {
 	const dispatch = useDispatch();
 	const cardInfo = useSelector(state => state.reviewsPage.cardInfo);
+	const currentPage = useSelector(state => state.reviewsPage.currentPage)
 	const {id: cardId} = useParams();
 
 	useEffect(() => {
-		dispatch (getCardInfo(cardId))
-	}, [cardId]);
+		switch (currentPage) {
+			case PAGES.reviews:
+				dispatch (getCardInfo(cardId))
+				break
+			case PAGES.popular:
+				dispatch (getCardInfoPopular(cardId))
+				break
+			case PAGES.gaming:
+				dispatch (getCardInfoGaming(cardId))
+				break
+			default:
+				break
+		}
+	}, [cardId]);// eslint-disable-line react-hooks/exhaustive-deps
 
 	return (
 	  <CardInfo cardInfo={cardInfo} />

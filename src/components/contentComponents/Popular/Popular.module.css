@@ -1,6 +1,0 @@
-.popular {
-	display: flex;
-	/*justify-content: space-between;*/
-	flex-wrap: wrap;
-	padding: 15px;
-}
