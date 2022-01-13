@@ -1,9 +1,7 @@
-import reviewsData from '../stock/reviews/reviews.json'
-import popularData from '../stock/popular/popular.json'
+import reviews from '../stock/reviews/reviews.json'
+import popular from '../stock/popular/popular.json'
 import gaming from '../stock/gaming/gaming.json'
-
-const reviews = reviewsData;
-const popular = popularData;
+import deals from '../stock/deals/deals.json'
 
 
 export const reviewsAPI = {
@@ -35,6 +33,17 @@ export const gamingAPI = {
 	getByFindGaming(cardId) {
 		return gaming.gaming.filter(gaming => {
 			return gaming.id === +cardId;
+		})
+	}
+}
+
+export const dealsAPI = {
+	getDeals() {
+		return deals.deals
+	},
+	getByFindDeals(cardId) {
+		return deals.deals.filter(deals => {
+			return deals.id === +cardId;
 		})
 	}
 }

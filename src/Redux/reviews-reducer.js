@@ -1,4 +1,4 @@
-import {gamingAPI, popularAPI, reviewsAPI} from "../api/api";
+import {dealsAPI, gamingAPI, popularAPI, reviewsAPI} from "../api/api";
 
 const SET_REVIEWS = 'SET_REVIEWS';
 const SET_CARD_INFO = 'SET_CARD_INFO';
@@ -24,7 +24,6 @@ const reviewsReducer = (state = initialState, action) => {
 				...state,
 				currentPage: action.payload
 			}
-			//
 		case SET_CARD_INFO:
 			return {
 				...state,
@@ -61,7 +60,7 @@ export const getCardInfoPopular = (cardId) => async (dispatch) => {
 }
 
 
-/// Gaming
+// Gaming
 export const requestGaming = () => async (dispatch) => {
 	const response = gamingAPI.getGaming();
 	dispatch(setReviews(response));
@@ -71,5 +70,14 @@ export const getCardInfoGaming = (cardId) => async (dispatch) => {
 	dispatch(setCardInfo(response));
 }
 
+// Deals
+export const requestDeals = () => async (dispatch) => {
+	const response = dealsAPI.getDeals();
+	dispatch(setReviews(response));
+}
+export const getCardInfoDeals = (cardId) => async (dispatch) => {
+	const response = dealsAPI.getByFindDeals(cardId);
+	dispatch(setCardInfo(response));
+}
 
 export default reviewsReducer;
