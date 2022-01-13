@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {getCardInfo, getCardInfoGaming, getCardInfoPopular} from "../../../Redux/reviews-reducer";
+import {getCardInfo, getCardInfoDeals, getCardInfoGaming, getCardInfoPopular} from "../../../Redux/reviews-reducer";
 import CardInfo from "./CardInfo";
 import {useParams} from "react-router-dom";
 import {PAGES} from "../../../constants";
@@ -21,6 +21,9 @@ export const CardInfoContainer = () => {
 				break
 			case PAGES.gaming:
 				dispatch (getCardInfoGaming(cardId))
+				break
+			case PAGES.deals:
+				dispatch (getCardInfoDeals(cardId))
 				break
 			default:
 				break

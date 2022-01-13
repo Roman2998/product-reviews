@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {requestDeals, setCurrentPage} from "../../../Redux/reviews-reducer";
+import {requestGaming, setCurrentPage} from "../../../Redux/reviews-reducer";
 import Reviews from "../Reviews/Reviews";
 import {PAGES} from "../../../constants";
 
@@ -10,7 +10,7 @@ export const GamingContainer = () => {
 	const currentPage = useSelector(state => state.reviewsPage.currentPage)
 
 	useEffect(()=> {
-		dispatch(requestDeals());
+		dispatch(requestGaming());
 		dispatch(setCurrentPage(PAGES.gaming))
 	},[])// eslint-disable-line react-hooks/exhaustive-deps
 

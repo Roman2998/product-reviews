@@ -2,7 +2,7 @@
   "deals": [
     {
       "id": 1,
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Roman2998/product-reviews/main/src/stock/deals/img/WD%20Blue%203D%20NAND%20500GB.png",
       "title": "Western Digital WD Blue 3D NAND (500 GB SATA)",
       "text": [
         {
@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Roman2998/product-reviews/main/src/stock/deals/img/Corsair%20HS60%20Pro%20Gaming%20Headset.png",
       "title": "Corsair HS60 Pro Gaming Headset",
       "text": [
         {
@@ -30,7 +30,7 @@
     },
     {
       "id": 3,
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Roman2998/product-reviews/main/src/stock/deals/img/WD%20HD%20(12%20TB).png",
       "title": "WD Elements External Desktop Hard Drive (12 TB)",
       "text": [
         {
@@ -44,7 +44,7 @@
     },
     {
       "id": 4,
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Roman2998/product-reviews/main/src/stock/deals/img/Razer%20Kiyo%20Webcam.png",
       "title": "Razer Kiyo Webcam",
       "text": [
         {
@@ -58,7 +58,7 @@
     },
     {
       "id": 5,
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Roman2998/product-reviews/main/src/stock/deals/img/Amazon%20Echo%20Show%205.png",
       "title": "Amazon Echo Show 5 Smart Display (2nd Gen)",
       "text": [
         {
@@ -72,7 +72,7 @@
     },
     {
       "id": 6,
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Roman2998/product-reviews/main/src/stock/deals/img/OnePlus%20Nord%20N200.png",
       "title": "OnePlus Nord N200 5G Android Phone",
       "text": [
         {
@@ -86,7 +86,7 @@
     },
     {
       "id": 7,
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Roman2998/product-reviews/main/src/stock/deals/img/Uni%20USB-C%20to%20DisplayPort.png",
       "title": "Uni USB-C to DisplayPort Cable (6 Feet)",
       "text": [
         {
