@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/product-reviews/static/css/main.b2613ff8.chunk.css",
-    "main.js": "/product-reviews/static/js/main.1e401292.chunk.js",
-    "main.js.map": "/product-reviews/static/js/main.1e401292.chunk.js.map",
+    "main.css": "/product-reviews/static/css/main.42b5299a.chunk.css",
+    "main.js": "/product-reviews/static/js/main.97660c0d.chunk.js",
+    "main.js.map": "/product-reviews/static/js/main.97660c0d.chunk.js.map",
     "runtime-main.js": "/product-reviews/static/js/runtime-main.cbf7ab09.js",
     "runtime-main.js.map": "/product-reviews/static/js/runtime-main.cbf7ab09.js.map",
     "static/js/2.688c3ebb.chunk.js": "/product-reviews/static/js/2.688c3ebb.chunk.js",
@@ -10,13 +10,14 @@
     "static/js/3.40349e24.chunk.js": "/product-reviews/static/js/3.40349e24.chunk.js",
     "static/js/3.40349e24.chunk.js.map": "/product-reviews/static/js/3.40349e24.chunk.js.map",
     "index.html": "/product-reviews/index.html",
-    "static/css/main.b2613ff8.chunk.css.map": "/product-reviews/static/css/main.b2613ff8.chunk.css.map",
-    "static/js/2.688c3ebb.chunk.js.LICENSE.txt": "/product-reviews/static/js/2.688c3ebb.chunk.js.LICENSE.txt"
+    "static/css/main.42b5299a.chunk.css.map": "/product-reviews/static/css/main.42b5299a.chunk.css.map",
+    "static/js/2.688c3ebb.chunk.js.LICENSE.txt": "/product-reviews/static/js/2.688c3ebb.chunk.js.LICENSE.txt",
+    "static/media/header.4f610e79.svg": "/product-reviews/static/media/header.4f610e79.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cbf7ab09.js",
     "static/js/2.688c3ebb.chunk.js",
-    "static/css/main.b2613ff8.chunk.css",
-    "static/js/main.1e401292.chunk.js"
+    "static/css/main.42b5299a.chunk.css",
+    "static/js/main.97660c0d.chunk.js"
   ]
 }
