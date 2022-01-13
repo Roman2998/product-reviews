@@ -2,7 +2,7 @@
   "entertainment": [
     {
       "id": 1,
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Roman2998/product-reviews/main/src/stock/entertainment/img/Squid%20Game.png",
       "title": "Netflix and Apple lead SAG Award nominations with 'Squid Game'",
       "text": [
         {
@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Roman2998/product-reviews/main/src/stock/entertainment/img/Spotify%20.png",
       "title": "Spotify is still working on HiFi streaming, but won't say when it's coming",
       "text": [
         {
@@ -30,7 +30,7 @@
     },
     {
       "id": 3,
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Roman2998/product-reviews/main/src/stock/entertainment/img/Volvo%20is%20bringing.png",
       "title": "Volvo is bringing YouTube and Google Home integration to its vehicles",
       "text": [
         {
