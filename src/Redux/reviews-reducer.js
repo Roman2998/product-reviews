@@ -1,4 +1,4 @@
-import {dealsAPI, gamingAPI, popularAPI, reviewsAPI} from "../api/api";
+import {dealsAPI, entertainmentAPI, gamingAPI, popularAPI, reviewsAPI} from "../api/api";
 
 const SET_REVIEWS = 'SET_REVIEWS';
 const SET_CARD_INFO = 'SET_CARD_INFO';
@@ -77,6 +77,16 @@ export const requestDeals = () => async (dispatch) => {
 }
 export const getCardInfoDeals = (cardId) => async (dispatch) => {
 	const response = dealsAPI.getByFindDeals(cardId);
+	dispatch(setCardInfo(response));
+}
+
+// EntertainmentContainer
+export const requestEntertainment = () => async (dispatch) => {
+	const response = entertainmentAPI.getEntertainment();
+	dispatch(setReviews(response));
+}
+export const getCardInfoEntertainment = (cardId) => async (dispatch) => {
+	const response = entertainmentAPI.getByFindEntertainment(cardId);
 	dispatch(setCardInfo(response));
 }
 

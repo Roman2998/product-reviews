@@ -52,6 +52,7 @@
     font-size: 1.2rem;
     line-height: 1.334;
     margin-bottom: 0.35em;
+    min-height: 50px;
 }
 
 .cardMainText {

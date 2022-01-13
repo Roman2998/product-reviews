@@ -2,6 +2,7 @@ import reviews from '../stock/reviews/reviews.json'
 import popular from '../stock/popular/popular.json'
 import gaming from '../stock/gaming/gaming.json'
 import deals from '../stock/deals/deals.json'
+import entertainment from '../stock/entertainment/entertainment.json'
 
 
 export const reviewsAPI = {
@@ -44,6 +45,18 @@ export const dealsAPI = {
 	getByFindDeals(cardId) {
 		return deals.deals.filter(deals => {
 			return deals.id === +cardId;
+		})
+	}
+}
+
+// EntertainmentContainer
+export const entertainmentAPI = {
+	getEntertainment() {
+		return entertainment.entertainment
+	},
+	getByFindEntertainment(cardId) {
+		return entertainment.entertainment.filter(entertainment => {
+			return entertainment.id === +cardId;
 		})
 	}
 }
